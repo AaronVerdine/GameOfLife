@@ -99,7 +99,7 @@ const App = () => {
           setGrid(rows);
         }}
       >
-        random
+        populate
       </button>
       <button
         onClick={() => {
