@@ -71,7 +71,7 @@ const App = () => {
       });
     });
 
-    setTimeout(runSim, 1000);
+    setTimeout(runSim, 100);
   }, []);
 
   return (
@@ -87,6 +87,27 @@ const App = () => {
       >
         {running ? "stop" : "start"}
       </button>
+      <button
+        onClick={() => {
+          const rows = [];
+          for (let i = 0; i < numRows; i++) {
+            rows.push(
+              Array.from(Array(numCols), () => (Math.random() > 0.7 ? 1 : 0))
+            );
+          }
+
+          setGrid(rows);
+        }}
+      >
+        random
+      </button>
+      <button
+        onClick={() => {
+          setGrid(genEmptyGrid());
+        }}
+      >
+        clear
+      </button>
       <div className="App">
         <header className="App-header">
           <h1>The Game of Life</h1>
@@ -96,6 +117,7 @@ const App = () => {
             style={{
               display: "grid",
               gridTemplateColumns: `repeat(${numCols}, 20px)`,
+              justifyContent: "center",
             }}
           >
             {grid.map((rows, i) =>
