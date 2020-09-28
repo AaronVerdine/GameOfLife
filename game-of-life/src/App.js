@@ -77,6 +77,7 @@ const App = () => {
   return (
     <>
       <button
+        className="button"
         onClick={() => {
           setRunning(!running);
           if (!running) {
@@ -88,6 +89,7 @@ const App = () => {
         {running ? "stop" : "start"}
       </button>
       <button
+        className="button"
         onClick={() => {
           const rows = [];
           for (let i = 0; i < numRows; i++) {
@@ -102,6 +104,7 @@ const App = () => {
         populate
       </button>
       <button
+        className="button"
         onClick={() => {
           setGrid(genEmptyGrid());
         }}
