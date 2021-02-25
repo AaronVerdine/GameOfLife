@@ -30,7 +30,7 @@ const App = () => {
     return genEmptyGrid();
   });
 
-  // console.log(grid);
+  console.log(grid);
 
   const [running, setRunning] = useState(false);
 
