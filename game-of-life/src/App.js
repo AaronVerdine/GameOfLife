@@ -80,7 +80,7 @@ const App = () => {
         <header className="App-header">
           <h1>The Game of Life</h1>
           <br></br>
-          <div>
+          <div className="button-container">
             <button
               className="button"
               onClick={() => {
