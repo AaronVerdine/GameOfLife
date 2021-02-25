@@ -78,8 +78,7 @@ const App = () => {
     <>
       <div className="App">
         <header className="App-header">
-          <h1>The Game of Life</h1>
-          <br></br>
+          <h1>Conway's Game of Life</h1>
           <div className="button-container">
             <button
               className="button"
@@ -119,6 +118,7 @@ const App = () => {
               clear
             </button>
           </div>
+          <br></br>
           <div
             style={{
               display: "grid",

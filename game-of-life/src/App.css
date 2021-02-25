@@ -64,6 +64,11 @@ h4 {
   border: "solid 1px white";
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   display: inline-block;
   padding: 0.7em 1.7em;
