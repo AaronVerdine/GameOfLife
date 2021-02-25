@@ -139,7 +139,7 @@ const App = () => {
                   style={{
                     width: 20,
                     height: 20,
-                    backgroundColor: grid[i][k] ? "carmine" : undefined,
+                    backgroundColor: grid[i][k] ? "DarkRed" : undefined,
                     border: "solid 1px black",
                   }}
                 />
